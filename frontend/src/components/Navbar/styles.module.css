@@ -1,0 +1,84 @@
+
+/* .container {
+     padding: 0.8rem 2rem;
+} */
+
+.container {
+    padding: 0.8rem 2rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+
+.navbar h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2b2d42;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.navbar h1:hover {
+    color: #ef233c; 
+}
+
+.navBarOptionContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    white-space: nowrap;
+    padding: 0.4rem;
+}
+
+
+.buttonJoin {
+    background: #ef233c; 
+    color: white;
+    padding: 0.5rem 1.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.buttonJoin:hover {
+    background: #d62839; 
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.6rem 1rem;
+    }
+
+    .navbar h1 {
+        font-size: 1.3rem;
+    }
+
+    .navBarOptionContainer {
+        gap: 0.6rem;
+    }
+          .navBarOptionContainer p {
+              font-size: 0.9rem;
+          }
+    
+          .buttonJoin {
+              padding: 0.4rem 1rem;
+              font-size: 0.9rem;
+          }
+     }

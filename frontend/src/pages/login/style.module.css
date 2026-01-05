@@ -1,0 +1,227 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background: linear-gradient(135deg, #edf2f4, #8d99ae); /* subtle gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardContainer {
+    display: flex;
+    width: 80vw;
+    max-width: 900px;
+    height: 80vh;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.cardContainer_left {
+    flex: 0.6;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.cardleft_heading {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2b2d42;
+}
+
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.inputRow {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.inputField {
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    border: 1px solid #8d99ae;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.inputField:focus {
+    border-color: #ef233c;
+    box-shadow: 0 0 5px rgba(239, 35, 60, 0.5);
+    outline: none;
+}
+
+
+.buttonWithOutline {
+    margin-top: 1rem;
+    background: transparent;
+    border: 2px solid #ef233c;
+    color: #ef233c;
+    padding: 0.8rem 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.buttonWithOutline:hover {
+    background: #ef233c;
+    color: #fff;
+}
+
+.cardContainer_right {
+    flex: 0.4;
+    background: #2b2d42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.rightButton {
+    padding: 0.5rem 1rem; 
+    font-size: 0.9rem;    
+    border-radius: 10px;
+    max-width: 150px; 
+    margin-left: 1.2rem;     
+}
+
+.accountMessage {
+    font-size: 1rem;
+    margin-left: 1rem;
+    display: inline; 
+    color: white;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .cardContainer {
+        width: 90vw;
+        height: 75vh;
+    }
+
+    .cardContainer_left {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .cardContainer_right {
+        font-size: 1.3rem;
+        padding: 2rem 1rem;
+    }
+
+    .inputField {
+        padding: 0.7rem 1rem;
+    }
+
+    .buttonWithOutline {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .cardleft_heading {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .accountMessage {
+        font-size: 0.95rem;
+    }
+
+    .inputRow {
+        gap: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .cardContainer {
+        width: 95vw;
+        height: 70vh;
+    }
+
+    .cardContainer_left {
+        padding: 2rem 1rem;
+    }
+
+    .cardContainer_right {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .cardleft_heading {
+        font-size: 1.5rem;
+    }
+
+    .inputField {
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .buttonWithOutline {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .accountMessage {
+        font-size: 0.9rem;
+    }
+
+    .inputRow {
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cardContainer {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .cardContainer_left {
+        padding: 1.5rem;
+    }
+
+    .cardContainer_right {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .cardleft_heading {
+        font-size: 1.3rem;
+    }
+
+    .inputField {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .buttonWithOutline {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .accountMessage {
+        font-size: 0.85rem;
+    }
+
+    .inputRow {
+        gap: 0.3rem;
+    }
+}

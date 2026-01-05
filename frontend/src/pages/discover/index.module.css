@@ -1,0 +1,77 @@
+
+.allUserprofile{
+display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.userCard{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.userCard_image{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.truncateText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 12.5rem;
+
+
+}
+
+.userCard h3 {
+    /* margin: 10px 0; */
+    color: #333;
+}
+.connectButton {
+    margin: 0.5rem;
+    padding-inline: 1rem;
+    padding-block: 0.6rem;
+    background: rgb(0, 94, 255);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.connectedButton {
+    margin: 0.5rem;
+    padding-inline: 0.9rem;
+    padding-block: 0.5rem;
+    border: 1px solid rgb(0, 119, 255);
+    color: rgb(41, 133, 169);
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.pendingButton {
+    margin: 0.5rem;
+    padding-inline: 0.9rem;
+    padding-block: 0.5rem;
+    border: 1px solid rgb(0, 119, 255);
+    border-radius: 10px;
+    color: rgb(0, 119, 255);
+}
+
+@media (max-width: 768px) {
+    .allUserprofile {
+        justify-content: center;
+    }
+
+    .userCard {
+        width: 200px;
+    }
+}
+

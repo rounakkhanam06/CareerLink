@@ -1,0 +1,120 @@
+
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "username": "Rnk123",
+  "password": "123456",
+  "email": "rnk@example.com",
+  "name": "Raunak"
+}
+
+
+
+
+###
+
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "rnk@example.com",
+  "password": "123456"
+}
+
+
+###
+
+GET http://localhost:5000/get_user_and_profile
+ Authorization: Bearer 83f5597cdb808fcf6a2155f8490872a40f538365fa98b8088247a51c2cac5565
+
+
+# GET http://localhost:5000/get_user_and_profile 
+# Content-Type: application/json
+
+# {
+#      "token": "9c0a64ab30744999d7cb1c1996044c01b11432aeb13d00e62b3d9e0065cacb20"
+      
+# }
+
+
+###
+POST http://localhost:5000/update_profile_details
+Content-Type: application/json
+
+{
+     "token": "30672343a2058b2fd80a3197cc241fff34ba2eb71e8aa6423d737cc07cafff70",
+     "bio": "Passionate developer with a love for coding.",
+     "currentPost": "Software Engineer at XYZ",
+     "pastWork":[
+          {
+               "company": "BCE Corp",
+               "role": "Intern-role",
+               "years": "3 months"
+          },
+          {
+               "company": "DEF Inc",
+               "role": "Junior Developer",
+               "years": "1 year"
+          }
+     ],
+      "education":[
+            {
+                "institution": "IIT Delhi",
+                "degree": "B.Tech in Computer Science",
+                "fieldOfStudy": "CSE"
+            }
+      ]
+}
+
+###
+GET http://localhost:5000/user/get_all_users
+
+
+### taking another user to check all users
+
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "username": "liza123",
+  "password": "12345",
+  "email": "liza123@example.com",
+  "name": "Liza Khan"
+}
+
+### login this user
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "liza123example.com",
+  "password": "12345"
+}
+
+###  Update Profile for the Second User-Liza
+POST http://localhost:5000/update_profile_details
+Content-Type: application/json
+
+{
+  "token": "e6ec38e2376d7bab3756713c95b916fc97e40fe587b45cc73a3edfc814b6cc30",
+  "bio": "Backend developer focused.",
+  "currentPost": "Backend Developer at Valcon Infotech",
+  "pastWork": [
+    {
+      "company": "SkyStar Software",
+      "role": "Frontend Intern",
+      "years": "15 days"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Takshshila Institute",
+      "degree": "B.Tech",
+      "fieldOfStudy": "Computer Science"
+    }
+  ]
+}
+
