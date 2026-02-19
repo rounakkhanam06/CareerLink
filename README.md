@@ -31,7 +31,7 @@ It allows users to:
 
 ## Tech Stack
 
-- **Frontend:** Next.js, React, Redux, Axios, CSS Modules  
+- **Frontend:** Next.js, Redux, Axios, CSS Modules  
 - **Backend:** Node.js, Express, MongoDB, Mongoose  
 - **Deployment:** Vercel (frontend), Render (backend)  
 
