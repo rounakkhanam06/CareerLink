@@ -6,7 +6,7 @@
 
 ## Overview
 
-CareerLink is a **LinkedIn clone** built with **Next.js, React, Node.js, Express, and MongoDB**.  
+CareerLink is a **LinkedIn clone** built with **Next.js, Node.js, Express, and MongoDB**.  
 It allows users to:  
 
 - Create and update profiles  
